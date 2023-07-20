@@ -1,5 +1,3 @@
-# test_dining_manager.py
-
 import pytest
 from dining_manager import validate_quantity, calculate_total
 
