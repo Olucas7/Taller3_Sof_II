@@ -28,4 +28,5 @@ class TestDiningManager(unittest.TestCase):
 
         # Test with discount for more than 5 items
         order_items_4 = {"1": 1, "2": 1, "3": 1, "4": 1, "5": 1}  # 5 platillos diferentes
-        self
+        expected_total_cost = int(36 * 0.9)
+        self.assertEqual(calculate_total(order_items_4), expected_total_cost)
